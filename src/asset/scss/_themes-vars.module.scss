@@ -1,0 +1,234 @@
+// paper & background
+$paper: #ffffff;
+$main_div: rgba(233, 238, 244, 1);
+
+// primary
+$primary: #007bff;
+$primaryLight: #e6edf4;
+$primaryMain: #00498f;
+$primaryDark: rgb(42, 42, 138);
+$primary200: #90caf9;
+$primary700: #4c89bd;
+$primary800: #1565c0;
+$buttonColor: #283891;
+$cancelButtonColor: #e0deea;
+$hyperlinkColor: rgba(0, 73, 143, 1);
+
+// secondary
+$secondaryLight: #ede7f6;
+$secondaryMain: #dcdbdf;
+$secondaryDark: #b8b6bd;
+$secondary200: #d0d5dd;
+$secondary800: #4527a0;
+$secondaryBtnColor: #283891;
+$secondaryBtnBgColor: #2838911a;
+
+// success Colors
+$successLight: #b9f6ca;
+$success200: #69f0ae;
+$successMain: #00e676;
+$successDark: #00c853;
+
+// error
+$errorLight: #ef9a9a;
+$errorMain: #d92d20;
+$errorDark: #c62828;
+
+// orange
+$orangeLight: #fbe9e7;
+$orangeMain: #ffab91;
+$orangeDark: #d84315;
+
+// warning
+$warningLight: #fff8e1;
+$warningMain: #ffe57f;
+$warningDark: #ffc107;
+
+// grey
+$grey50: #f8fafc;
+$grey100: #eef2f6;
+$grey200: #e3e8ef;
+// $grey300: #cdd5df;
+$grey400: #606468;
+$grey500: #666666;
+$grey600: #4b5565;
+$grey700: #444444;
+$grey900: #888888;
+
+// blue
+$blue300: rgba(0, 144, 214, 1);
+
+//label
+$labelColor: #201f24;
+
+// text
+$textPrimary: #344054;
+$textSecondary: #667085;
+$textDark: #101828;
+$textLight: #00498f;
+$textError: #b42318;
+$textSuccess: #027a48;
+$textLabel: #201f24;
+
+// border
+$borderMain: #d0d5dd;
+$borderLight: #eaecf0;
+
+$logoMain: #004a90;
+$logoLight: #5596d1;
+
+$grey300: #f2f4f7;
+
+// ==============================|| DARK THEME VARIANTS ||============================== //
+
+// paper & background
+$darkBackground: #1a223f; // level 3
+$darkPaper: #111936; // level 4
+
+// dark 800 & 900
+$darkLevel1: #29314f; // level 1
+$darkLevel2: #212946; // level 2
+
+// primary dark
+$darkPrimaryLight: #eef2f6;
+$darkPrimaryMain: #2196f3;
+$darkPrimaryDark: #1e88e5;
+$darkPrimary200: #90caf9;
+$darkPrimary800: #1565c0;
+
+// secondary dark
+$darkSecondaryLight: #d1c4e9;
+$darkSecondaryMain: #7c4dff;
+$darkSecondaryDark: #651fff;
+$darkSecondary200: #b39ddb;
+$darkSecondary800: #6200ea;
+
+// text variants
+$darkTextTitle: #d7dcec;
+$darkTextPrimary: #bdc8f0;
+$darkTextSecondary: #8492c4;
+
+$sideMenuSelectIconColor: #007bff;
+$sideMenuSelectIconColorBack: #ededed;
+$avtarBGColor: #8353e2;
+$inputBoxBgColor: #0000000f;
+$tableHeadText: #666666;
+$createButtonColor: #5cb85c;
+// ==============================|| JAVASCRIPT ||============================== //
+
+:export {
+  // paper & background
+  paper: $paper;
+  main_div: $main_div;
+
+  // primary
+  primary: $primary;
+  primaryLight: $primaryLight;
+  primary200: $primary200;
+  primaryMain: $primaryMain;
+  primaryDark: $primaryDark;
+  primary800: $primary800;
+  primary700: $primary700;
+  buttonColor: $buttonColor;
+  cancelButtonColor: $cancelButtonColor;
+  hyperlinkColor: $hyperlinkColor;
+
+  // secondary
+  secondaryLight: $secondaryLight;
+  secondary200: $secondary200;
+  secondaryMain: $secondaryMain;
+  secondaryDark: $secondaryDark;
+  secondary800: $secondary800;
+  secondaryBtnColor: $secondaryBtnColor;
+  secondaryBtnBgColor: $secondaryBtnBgColor;
+
+  // success
+  successLight: $successLight;
+  success200: $success200;
+  successMain: $successMain;
+  successDark: $successDark;
+
+  // error
+  errorLight: $errorLight;
+  errorMain: $errorMain;
+  errorDark: $errorDark;
+
+  // orange
+  orangeLight: $orangeLight;
+  orangeMain: $orangeMain;
+  orangeDark: $orangeDark;
+
+  // warning
+  warningLight: $warningLight;
+  warningMain: $warningMain;
+  warningDark: $warningDark;
+
+  // grey
+  grey50: $grey50;
+  grey100: $grey100;
+  grey200: $grey200;
+  grey300: $grey300;
+  grey400: $grey400;
+  grey500: $grey500;
+  grey600: $grey600;
+  grey700: $grey700;
+  grey900: $grey900;
+
+  // blue
+  blue300: $blue300;
+
+  //label
+  labelColor: $labelColor;
+
+  // text
+  textPrimary: $textPrimary;
+  textSecondary: $textSecondary;
+  textDark: $textDark;
+  textLight: $textLight;
+  textLabel: $textLabel;
+  textError: $textError;
+  textSuccess: $textSuccess;
+
+  // border
+  borderMain: $borderMain;
+  borderLight: $borderLight;
+
+  logoMain: $logoMain;
+  logoLight: $logoLight;
+
+  // ==============================|| DARK THEME VARIANTS ||============================== //
+
+  // paper & background
+  darkPaper: $darkPaper;
+  darkBackground: $darkBackground;
+
+  // dark 800 & 900
+  darkLevel1: $darkLevel1;
+  darkLevel2: $darkLevel2;
+
+  // text variants
+  darkTextTitle: $darkTextTitle;
+  darkTextPrimary: $darkTextPrimary;
+  darkTextSecondary: $darkTextSecondary;
+
+  // primary dark
+  darkPrimaryLight: $darkPrimaryLight;
+  darkPrimaryMain: $darkPrimaryMain;
+  darkPrimaryDark: $darkPrimaryDark;
+  darkPrimary200: $darkPrimary200;
+  darkPrimary800: $darkPrimary800;
+
+  // secondary dark
+  darkSecondaryLight: $darkSecondaryLight;
+  darkSecondaryMain: $darkSecondaryMain;
+  darkSecondaryDark: $darkSecondaryDark;
+  darkSecondary200: $darkSecondary200;
+  darkSecondary800: $darkSecondary800;
+
+  sideMenuSelectIconColor: $sideMenuSelectIconColor;
+  sideMenuSelectIconColorBack: $sideMenuSelectIconColorBack;
+  avtarBGColor: $avtarBGColor;
+  inputBoxBgColor: $inputBoxBgColor;
+  tableHeadColor: $tableHeadText;
+  createButtonColor: $createButtonColor;
+}

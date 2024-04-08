@@ -1,0 +1,74 @@
+.Toastify {
+  &__toast {
+    border-radius: 10px !important;
+    font-family: 'InterVariableFont' !important;
+    max-width: 450px;
+    min-width: 300px;
+
+    &-body {
+      font-size: 1rem !important;
+      margin-right: 0.875rem !important;
+      margin-left: 25px !important;
+    }
+
+    &-container {
+      width: auto !important;
+
+      &--top-right {
+        top: 7.2rem !important;
+        right: 2.5rem !important;
+        // top: 1.2rem !important;
+      }
+    }
+
+    & > button {
+      display: none;
+    }
+
+    &--error {
+      background-color: #fef3f2 !important;
+
+      .Toastify__toast-body {
+        color: rgba(180, 35, 24, 1) !important;
+      }
+
+      &::before {
+        content: url('../images/icons/toaster-error.svg');
+        position: relative;
+        z-index: 100000;
+        left: 12px;
+        top: 14px;
+      }
+    }
+
+    &--success {
+      background-color: #ecfdf3 !important;
+
+      .Toastify__toast-body {
+        color: #027a48 !important;
+      }
+
+      &::before {
+        content: url('../images/icons/toaster-success.svg');
+        position: relative;
+        z-index: 100000;
+        left: 12px;
+        top: 14px;
+      }
+    }
+
+    &-icon {
+      display: none !important;
+    }
+  }
+
+  &__progress-bar {
+    &--success {
+      background-color: #027a48 !important;
+    }
+
+    &--error {
+      background-color: rgba(180, 35, 24, 1) !important;
+    }
+  }
+}

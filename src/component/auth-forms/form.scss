@@ -1,0 +1,42 @@
+.otp_input_box {
+  width: 3rem !important;
+  height: 3rem;
+  margin: 1rem 0.5em 0 0.5rem;
+  color: black;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #d0d5dd;
+  font-size: 20px;
+}
+
+.otp_input_box:focus {
+  border: 2px solid #000;
+}
+
+.verify-otp {
+  width: 100%;
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .otp_input_box {
+    width: 2rem !important;
+    height: 35px;
+    margin: 0 0.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .otp_input_box {
+    width: 3rem !important;
+    height: 35px;
+    margin: 0 0.5em;
+  }
+}
+
+.verifyemail_chip_cursor > svg {
+  cursor: default !important;
+}
+
+// .MuiFilledInput-input:-webkit-autofill {
+//   border-top-left-radius: 0px;
+// }

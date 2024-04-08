@@ -1,0 +1,83 @@
+.datepicker-input-slot {
+  border: none !important;
+  outline: none !important;
+  background-color: #fff !important;
+  .Mui-disabled {
+    background-color: #fff !important;
+    -webkit-text-fill-color: #969696 !important;
+  }
+}
+
+.datepicker-input-slot1 {
+  color: gray !important; /* Change to the desired text color */
+  font-weight: normal; /* Change to the desired font weight */
+  border: none !important;
+  outline: none !important;
+  background-color: #ffffff !important;
+  .MuiInputBase-root {
+    background-color: #ffffff !important;
+  }
+  .MuiInputBase-root .Mui-disabled {
+    background-color: rgba(161, 161, 161, 0.1) !important;
+    -webkit-text-fill-color: #969696 !important;
+  }
+  .MuiInputBase-root .Mui-disabled.MuiInputBase-inputAdornedEnd {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+}
+
+.datepicker-input-slot1 {
+  color: gray !important; /* Change to the desired text color */
+  font-weight: normal; /* Change to the desired font weight */
+  background-color: #ffffff !important;
+  .MuiInputBase-root {
+    background-color: #ffffff !important;
+    -webkit-text-fill-color: #969696 !important;
+  }
+
+  .Mui-disabled {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+
+    button {
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+      border-top-right-radius: 10px !important;
+      border-bottom-right-radius: 10px !important;
+    }
+  }
+}
+
+.MuiFilledInput-input {
+  padding: 10px !important;
+}
+
+.MuiFilledInput-root {
+  padding: 0 !important;
+}
+
+.MuiAutocomplete-popper {
+  .MuiPaper-root {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.MuiChipsInput-TextField {
+  input {
+    display: none;
+  }
+  .MuiChip-filled {
+    background-color: #eaecf4;
+    font-size: 12px;
+    border-radius: 3.24px;
+    color: #201f24;
+    display: flex;
+    align-items: center;
+
+    .MuiChip-label {
+      padding-left: 7px !important;
+      padding-right: 7px !important;
+    }
+  }
+}

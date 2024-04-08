@@ -1,0 +1,37 @@
+.pdf-card {
+  height: 8rem !important;
+  width: 8rem !important;
+}
+.pdf-card .react-pdf__Document {
+  min-width: 8rem !important;
+  width: 8rem !important;
+}
+
+.pdf-card .react-pdf__Page {
+  min-width: 8rem !important;
+  width: 8rem !important;
+  height: 8rem !important;
+}
+.pdf-card .react-pdf__Page__canvas {
+  transform: scale(1);
+  width: 8rem !important;
+  height: 8rem !important;
+}
+
+.pdfviewer_card {
+  height: 80vh !important;
+}
+
+.pdfviewer_card .react-pdf__Document {
+  height: 80vh !important;
+}
+
+.pdfviewer_card .react-pdf__Page {
+  height: 80vh !important;
+  min-width: unset !important;
+}
+
+.pdfviewer_card .react-pdf__Page__canvas {
+  height: 80vh !important;
+  width: 100% !important;
+}

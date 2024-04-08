@@ -1,0 +1,49 @@
+.advanced-filter {
+  width: 300px;
+
+  .MuiTypography-label {
+    padding-top: 5px !important;
+    font-size: 0.75rem;
+    color: #201f24;
+  }
+  .MuiFormControl-root input {
+    height: 0.75rem !important;
+    font-size: 0.75rem !important;
+    &::placeholder {
+      font-size: 0.75rem !important;
+    }
+  }
+
+  .MuiFormControl-root-MuiTextField-root .MuiSelect-select {
+    padding: 12px !important;
+  }
+
+  .MuiSelect-select {
+    font-size: 0.75rem !important;
+  }
+
+  .MuiMenu-list {
+    font-size: 0.75 rem !important;
+  }
+  .MuiFormControl-root .MuiButtonBase-root img {
+    height: 18px;
+    width: 18px;
+  }
+  .MuiFormControl-root .MuiInputAdornment-positionEnd button {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+  }
+
+  &-btns {
+    button {
+      font-size: 0.75rem;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+    }
+  }
+}
+
+.menu-small.MuiMenuItem-root {
+  padding: 10px !important;
+  font-size: 0.75rem !important;
+}

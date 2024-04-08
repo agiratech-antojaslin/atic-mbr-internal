@@ -1,0 +1,117 @@
+@import './asset/scss/_themes-vars.module.scss';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'InterVariableFont';
+  src:
+    local('InterVariableFont'),
+    url('./asset/fonts/Inter/Inter-VariableFont_slnt,wght.ttf')
+      format('truetype');
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.customInput_padding > .MuiInputBase-root {
+  padding: 5px 10px;
+}
+
+.customInput_padding > .MuiInputBase-root::before {
+  border-bottom: 2px solid $primaryMain !important;
+}
+
+.customInput_padding > .MuiInputBase-root::after {
+  border-bottom: 2px solid $primaryMain !important;
+}
+
+.customInput_padding > .MuiInput-root.Mui-error::before {
+  border-bottom: 2px solid $errorMain !important;
+}
+
+.customInput_padding > .MuiInput-root.Mui-error::after {
+  border-bottom: 2px solid $errorMain !important;
+}
+
+.swal2-container {
+  z-index: 99999;
+}
+.swal2-confirm,
+.swal2-cancel {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.cancelbtn {
+  padding: 0 35px;
+  border-radius: 5px !important;
+  color: $buttonColor;
+  height: 3rem;
+  background-color: #28389110;
+}
+
+.chat-scroll {
+  .ps__rail-x {
+    display: none !important;
+  }
+}
+
+.Textarea_design {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.2;
+  padding: 12px;
+  resize: none;
+  max-height: 124px !important;
+  overflow-y: auto !important;
+  background: #4091d60d !important;
+  border-radius: 5px;
+  border: none;
+  .Textarea_design :focus-visible {
+    border: none !important;
+    outline: none !important;
+  }
+}
+
+.MuiMultiSectionDigitalClock-root {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(187, 187, 187);
+  }
+}
+
+.InputField_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+  // grid-gap: 10px;
+  // padding: .3rem;
+  width: '100%';
+  background-color: #ffffff;
+  // border: 1px solid #ccc !important;
+}
+.support {
+  color: #444;
+  text-decoration: none;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-width: 1px !important;
+}

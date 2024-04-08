@@ -1,0 +1,161 @@
+@import 'themes-vars.module.scss';
+
+.swal-mbr {
+  width: 400px;
+  border-radius: 12px;
+
+  .swal2-title {
+    padding-top: 0px;
+  }
+
+  .swal2-image {
+    margin-bottom: 5px;
+  }
+
+  .swal2-actions {
+    width: 100% !important;
+
+    .swal2-confirm {
+      width: 43%;
+      order: 2;
+      background-color: $primaryMain;
+      padding: 0.625rem 1.125rem;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .swal2-cancel {
+      width: 43%;
+      order: 1;
+      background-color: #fff;
+      border: 1px solid $borderMain;
+      padding: 0.625rem 1.125rem;
+      border-radius: 8px;
+      color: $textPrimary;
+      font-weight: 600;
+    }
+  }
+
+  .swal2-html-container {
+    margin-top: 0px;
+  }
+}
+
+.swal-mbr-success {
+  width: 343px;
+  border-radius: 12px;
+
+  .swal2-title {
+    padding-top: 0px;
+  }
+
+  .swal2-image {
+    margin-top: 1em;
+    margin-bottom: 5px;
+  }
+
+  .swal2-actions {
+    width: 100% !important;
+    margin-top: 0px;
+
+    .swal2-confirm {
+      width: 89.5%;
+      order: 2;
+      background-color: $primaryMain;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .swal2-cancel {
+      width: 85%;
+      order: 1;
+      background-color: #fff;
+      border: 1px solid $borderMain;
+      padding: 0.625rem 1.125rem;
+      border-radius: 8px;
+      color: $textPrimary;
+      font-weight: 600;
+    }
+  }
+
+  .swal2-footer {
+    margin-top: 0px;
+    border-top: none;
+
+    a {
+      font-size: 12px;
+      font-weight: 500;
+      color: #00498f;
+      cursor: pointer;
+    }
+  }
+
+  .swal2-html-container {
+    margin-top: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    .deny-buttons,
+    .reprice-buttons {
+      display: flex;
+      justify-content: space-between;
+      button {
+        background-color: #fff;
+        border: 1px solid #d0d5dd;
+        padding: 10px 18px;
+        border-radius: 8px;
+        color: #344054;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+
+    .deny-buttons button {
+      width: 48%;
+    }
+
+    .reprice-buttons button {
+      width: 100%;
+    }
+  }
+}
+
+.swal-mbr-info {
+  width: 400px;
+  border-radius: 12px;
+
+  .swal2-title {
+    padding-top: 0px;
+  }
+
+  .swal2-image {
+    margin-top: 1em;
+    margin-bottom: 5px;
+  }
+
+  .swal2-actions {
+    width: 100% !important;
+
+    .swal2-confirm {
+      width: 43%;
+      order: 2;
+      background-color: $primaryMain;
+      padding: 0.625rem 1.125rem;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .swal2-cancel {
+      width: 43%;
+      order: 1;
+      background-color: #fff;
+      border: 1px solid $borderMain;
+      padding: 0.625rem 1.125rem;
+      border-radius: 8px;
+      color: $textPrimary;
+      font-weight: 600;
+    }
+  }
+
+  .swal2-html-container {
+    margin-top: 0px;
+  }
+}
