@@ -47,6 +47,8 @@ declare module '@mui/material/styles' {
     labelColor: string
     secondaryBtnColor: string
     secondaryBtnBgColor: string
+    gradient1: string
+    gradient2: string
   }
 
   interface TypeText {

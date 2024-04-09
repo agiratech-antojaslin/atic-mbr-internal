@@ -9,6 +9,7 @@ import {
   Box,
   ButtonBase,
   Toolbar,
+  IconButton,
 } from '@mui/material'
 import { IconMenu2 } from '@tabler/icons'
 
@@ -25,6 +26,8 @@ import {
 import { matchPath, useNavigate, useLocation } from 'react-router-dom'
 import { useIsHiddenRouteActive } from 'hooks/useIsHiddenRouteActive'
 import Logo from 'component/ui-component/Logo'
+import ApplicationsIcon from 'asset/images/menu/applications.svg'
+import NotificationIcon from 'asset/images/menu/notification.svg'
 
 // ==============================|| MAIN NAVBAR / HEADER ||============================== //
 
@@ -56,8 +59,8 @@ const Header = ({ handleLeftDrawerToggle }: HeaderTypes) => {
 
   useEffect(() => {
     if (matchDownXl) {
-      const visibleMenusSlice = menuItems[0]?.children?.slice(0, 4)
-      const hiddenMenusSlice = menuItems[0]?.children?.slice(4)
+      const visibleMenusSlice = menuItems[0]?.children?.slice(0, 5)
+      const hiddenMenusSlice = menuItems[0]?.children?.slice(5)
       setVisibleMenus(visibleMenusSlice)
       setHiddenMenus(hiddenMenusSlice)
       if (isHiddenRouteActive) {
@@ -117,6 +120,7 @@ const Header = ({ handleLeftDrawerToggle }: HeaderTypes) => {
             display: 'flex',
             justifyContent: 'space-between',
             width: '100%',
+
             [theme.breakpoints.down('md')]: {
               width: 'auto',
               flexDirection: 'row-reverse',
@@ -124,7 +128,7 @@ const Header = ({ handleLeftDrawerToggle }: HeaderTypes) => {
           }}
         >
           <Box sx={{ pt: 1, pb: 1 }}>
-            <Logo width="105" />
+            <Logo width="76" />
           </Box>
           {!matchDownMd && (
             <Box sx={{ display: 'flex', flexDirection: 'row' }}>
@@ -147,8 +151,25 @@ const Header = ({ handleLeftDrawerToggle }: HeaderTypes) => {
               )}
             </Box>
           )}
+
           {!matchDownMd && (
-            <Box display={'flex'} flexDirection={'row'} alignItems={'center'}>
+            <Box
+              width={'150px'}
+              display={'flex'}
+              flexDirection={'row'}
+              alignItems={'center'}
+              justifyContent={'space-between'}
+            >
+              <IconButton aria-label="more" id="long-button">
+                <img src={ApplicationsIcon} width="24" />
+              </IconButton>
+              <IconButton
+                aria-label="more"
+                id="long-button"
+                sx={{ backgroundColor: theme.palette.primary.primary200 }}
+              >
+                <img src={NotificationIcon} width="19" />
+              </IconButton>
               <ProfileSection />
             </Box>
           )}

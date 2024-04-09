@@ -1,0 +1,30 @@
+$fontSize: 14px;
+
+$appBarMinHeight: 48px;
+$appBarMaxHeight: 64px;
+
+$borderRadius: 8;
+
+// Breakpoints
+$xSmall: 0;
+$small: 600;
+$medium: 900;
+$large: 1280;
+$xLarge: 1920;
+
+@media (min-width: 1920px) {
+  $fontSize: 16px;
+}
+
+:export {
+  appBarMinHeight: $appBarMinHeight;
+  appBarMaxHeight: $appBarMaxHeight;
+
+  borderRadius: $borderRadius;
+
+  xSmall: $xSmall;
+  small: $small;
+  medium: $medium;
+  large: $large;
+  xLarge: $xLarge;
+}

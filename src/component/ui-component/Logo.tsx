@@ -28,34 +28,18 @@ const Logo: FC<logoProps> = ({ width = '114', isAuth = false }: logoProps) => {
       <Box
         sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
       >
-        <img src={logo} alt="Berry" width={width} height={'75px'} />
+        <img src={logo} alt="Berry" width={width} height={'50px'} />
         <Box ml={1}>
           <Box
             sx={{
-              color: theme.palette.secondary.main,
-              fontSize: isAuth ? '1.125rem' : '.875rem',
-              fontWeight: isAuth ? 500 : 600,
+              background: `linear-gradient(to right, ${theme.palette.primary.gradient1}, ${theme.palette.primary.gradient2})`,
+              '-webkit-text-fill-color': 'transparent',
+              '-webkit-background-clip': 'text',
+              fontSize: isAuth ? '1.125rem' : '1.143rem',
+              fontWeight: 500,
             }}
           >
-            Medical
-          </Box>
-          <Box
-            sx={{
-              color: theme.palette.secondary.main,
-              fontSize: isAuth ? '1.125rem' : '.875rem',
-              fontWeight: isAuth ? 500 : 600,
-            }}
-          >
-            Bill
-          </Box>
-          <Box
-            sx={{
-              color: theme.palette.secondary.light,
-              fontSize: isAuth ? '1.125rem' : '.875rem',
-              fontWeight: isAuth ? 500 : 600,
-            }}
-          >
-            Repricing
+            Docmatic
           </Box>
         </Box>
       </Box>

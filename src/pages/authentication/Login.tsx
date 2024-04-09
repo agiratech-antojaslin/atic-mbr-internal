@@ -46,22 +46,33 @@ const Login = () => {
       password: values.password,
       client: values.client,
     }
-    commonService
-      .postService(`/auth/send-otp`, payload)
-      .then(async (res: any) => {
-        const data = res.data
-        setOtpMail(data.data.mail)
-        localStorage.setItem('at-docmatic-user', JSON.stringify(data.data))
-        localStorage.setItem('is-logged', 'true')
-        dispatch(setUserRedux(data.data))
-        setLogin(false)
-        setLoading(false)
-        Success(data.message, true)
-      })
-      .catch((error) => {
-        setLoading(false)
-        Failed(errorMessage(error, 'Something Went Wrong!'), true)
-      })
+    // commonService
+    //   .postService(`/auth/send-otp`, payload)
+    //   .then(async (res: any) => {
+    //     const data = res.data
+    //     setOtpMail(data.data.mail)
+    const user = {
+      displayName: 'gunasekar.k',
+      sAMAccountName: 'Gunasekar',
+      mail: 'gunasekar.k@agiratech.com',
+      role: 'ADMIN',
+    }
+    localStorage.setItem('at-docmatic-user', JSON.stringify(user))
+    localStorage.setItem('is-logged', 'true')
+    dispatch(setUserRedux(user))
+    const menus = menuItemMBR[user?.role]
+    const popupItem = popupItems['EXAMINER']
+    dispatch(setPopupItemsRedux(popupItem))
+    dispatch(setMenuItemsRedux(menus))
+    navigate(`/dashboard`)
+    setLogin(false)
+    setLoading(false)
+    //Success(data.message, true)
+    // })
+    // .catch((error) => {
+    //   setLoading(false)
+    //   Failed(errorMessage(error, 'Something Went Wrong!'), true)
+    // })
   }
 
   const handleOtpSubmit = (formData: any) => {
@@ -96,22 +107,37 @@ const Login = () => {
 
   const getLDAPClients = () => {
     setLoading(true)
-    commonService
-      .getServices(`/auth/clients`)
-      .then(async (res: any) => {
-        const data = res.data.data.map((client: IClient) => {
-          return {
-            name: capitalizeFirstLetter(client.name),
-            value: client.name,
-          }
-        })
-        setEntities(data)
-        setLoading(false)
-      })
-      .catch((error) => {
-        setLoading(false)
-        Failed(errorMessage(error, 'Something Went Wrong!'), true)
-      })
+
+    // commonService
+    //   .getServices(`/auth/clients`)
+    //   .then(async (res: any) => {
+    const res: any = {
+      status: 200,
+      message: 'Data successfully retrived',
+      data: [
+        {
+          id: 1,
+          name: 'agiratech',
+          isActive: true,
+          createdAt: '2024-02-27T07:51:38.711Z',
+          updatedAt: '2024-02-27T07:51:38.711Z',
+          updatedBy: null,
+        },
+      ],
+    }
+    const data = res.data.map((client: IClient) => {
+      return {
+        name: capitalizeFirstLetter(client.name),
+        value: client.name,
+      }
+    })
+    setEntities(data)
+    setLoading(false)
+    // })
+    // .catch((error) => {
+    //   setLoading(false)
+    //   Failed(errorMessage(error, 'Something Went Wrong!'), true)
+    // })
   }
 
   return (
@@ -120,14 +146,6 @@ const Login = () => {
       <Box sx={{ width: '100%' }}>
         <Grid container justifyContent={'center'} alignItems={'center'}>
           <Box className="banner">
-            {/* <Box
-              sx={{
-                display: { lg: 'block', md: 'block', sm: 'none', xs: 'none' },
-              }}
-              className="bg-img"
-            >
-              <img height={'100%'} src={loginLogo} />
-            </Box> */}
             <Box className="banner-wrapper">
               <img src={loginLogo} alt="Your Image" />
             </Box>

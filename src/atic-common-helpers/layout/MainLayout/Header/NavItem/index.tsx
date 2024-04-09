@@ -14,7 +14,7 @@ import {
   List,
   Box,
   Menu,
-  MenuItem
+  MenuItem,
 } from '@mui/material'
 import { ExpandLess, ExpandMore, MoreVert } from '@mui/icons-material'
 
@@ -28,7 +28,6 @@ import Assets from 'helpers/assets.helper'
 // ==============================|| SIDEBAR MENU LIST ITEMS ||============================== //
 
 const NavItem = ({ item, isMainMenu, handleClick }: NavItemTypes) => {
-  
   const theme = useTheme()
   const location = useLocation()
   const { id } = useParams()
@@ -98,7 +97,6 @@ const NavItem = ({ item, isMainMenu, handleClick }: NavItemTypes) => {
             >
               <MoreVert />
             </IconButton>
-
             <Menu
               sx={{
                 borderRadius: `${theme.shape.borderRadius}px`,
@@ -301,5 +299,3 @@ type NavItemTypes = {
 }
 
 export default NavItem
-
-

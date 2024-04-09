@@ -1,10 +1,10 @@
 ## Project Name:
 
-American Transit - MBR
+American Transit - DOCMATIC
 
 ## Description:
 
-The bill repricing system to the insurance company for the claims that injured party proposes to pay.
+A tool to create a collection of related documents called as 'Defense package'.
 
 ## Technologies Used:
 
@@ -16,9 +16,12 @@ The bill repricing system to the insurance company for the claims that injured p
 
 ## Modules:
 
-1. Bills List
-2. Examine Bills
-3. CPT Calculation
+1. Dashboard
+2. AAA Cases
+3. Documents
+4. Calendar
+5. Reports
+6. Admin Settings
 
 ## Getting Started:
 

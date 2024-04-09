@@ -28,6 +28,8 @@ export default function themePalette(theme: any) {
       iconColor: theme.iconColor,
       darkBackgroundColor: theme.colors.primaryDark,
       menuColor: theme.colors.menuColor,
+      gradient1: theme.colors.gradient1,
+      gradient2: theme.colors.gradient2,
     },
     secondary: {
       light: theme.logoLight,

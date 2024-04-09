@@ -2,6 +2,7 @@ import { createTheme, ThemeOptions } from '@mui/material/styles'
 
 // assets
 import colors from '../scss/_themes-vars.module.scss'
+import variables from '../scss/_variables.module.scss'
 
 // project imports
 import componentStyleOverrides from './compStyleOverride'
@@ -35,6 +36,7 @@ declare module '@mui/material/Typography' {
 
 export const theme = (customization: any) => {
   const color = colors
+  const variable = variables
 
   const themeOption = {
     colors: color,
@@ -55,7 +57,7 @@ export const theme = (customization: any) => {
     tableHeadColor: color.tableHeadColor,
     createButtonColor: color.createButtonColor,
     iconColor: color.primaryDark,
-    hyperlinkColor: color.primaryDark,
+    hyperlinkColor: color.hyperlinkColor,
     menuColor: color.grey400,
     labelColor: color.labelColor,
     secondaryBtnColor: color.secondaryBtnColor,
@@ -74,6 +76,9 @@ export const theme = (customization: any) => {
 
     logoMain: color.logoMain,
     logoLight: color.logoLight,
+
+    gradient1: color.gradient1,
+    gradient2: color.gradient2,
   }
 
   const themeOptions = {
@@ -85,20 +90,21 @@ export const theme = (customization: any) => {
         sm: 600,
         md: 900,
         lg: 1280,
-        xl: 1536,
+        xl: 1920,
       },
     },
     mixins: {
       toolbar: {
-        minHeight: '48px',
+        minHeight: variable.appBarMinHeight,
         padding: '16px',
         '@media (min-width: 600px)': {
-          minHeight: '48px',
+          minHeight: variable.appBarMinHeight,
+          maxHeight: variable.appBarMaxHeight,
         },
       },
     },
     shape: {
-      borderRadius: 8,
+      borderRadius: variable.borderRadius,
     },
     typography: themeTypography(themeOption),
   } as ThemeOptions

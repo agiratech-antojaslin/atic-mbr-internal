@@ -37,10 +37,6 @@ import FileOpenIcon from '@mui/icons-material/FileOpen'
 
 // topbar
 import {
-  BillsIcon,
-  DeniedBillsIcon,
-  AcceptedBillsIcon,
-  CptCalculatorIcon,
   ViewBillIcon,
   VisibilityOffIcon,
   VisibilityIcon,
@@ -61,6 +57,12 @@ import {
   CircleCloseIcon,
   CloseIcon,
   GenerateEOBOrDOCIcon,
+  AAACasesIcon,
+  DocumentsIcon,
+  CalendarIcon,
+  ReportsIcon,
+  DashboardIcon,
+  ApplicationsIcon,
 } from './customIcons'
 
 const Assets: any = {
@@ -82,7 +84,6 @@ const Assets: any = {
   chat: ChatOutlinedIcon,
   accidentform: ListAltIcon,
 
-  dashboard: DashboardOutlinedIcon,
   userPerson: PeopleOutlineOutlinedIcon,
   masterPerson: Person4OutlinedIcon,
   userReport: TextSnippetOutlinedIcon,
@@ -100,10 +101,14 @@ const Assets: any = {
   PersonOutlined: PersonOutlineOutlinedIcon,
   driversIcon: GroupOutlinedIcon,
 
-  bills: BillsIcon,
-  deniedBills: DeniedBillsIcon,
-  acceptedBills: AcceptedBillsIcon,
-  cptCalculatorIcon: CptCalculatorIcon,
+  // Docamtic icons
+  dashboard: DashboardIcon,
+  aaaCases: AAACasesIcon,
+  documents: DocumentsIcon,
+  calendar: CalendarIcon,
+  reports: ReportsIcon,
+  applications: ApplicationsIcon,
+
   viewBillIcon: ViewBillIcon,
   administrationIcon: AdministrationIcon,
   filtersIcon: FiltersIcon,

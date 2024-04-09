@@ -3,12 +3,10 @@
  * @param {JsonObject} theme theme customization object
  */
 
-import { getRootFS } from 'atic-common-helpers/helpers/responsive.helper'
-
 export default function themeTypography(theme: any) {
   return {
     fontFamily: theme?.customization?.fontFamily,
-    fontSize: getRootFS(),
+
     h6: {
       fontWeight: 500,
       color: theme.heading,

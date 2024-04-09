@@ -1,4 +1,10 @@
 @import './asset/scss/_themes-vars.module.scss';
+@import './asset/scss/_variables.module.scss';
+
+html {
+  font-size: $fontSize;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

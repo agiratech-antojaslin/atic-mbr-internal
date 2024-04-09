@@ -1,6 +1,6 @@
 import dayjs, { Dayjs } from 'dayjs'
 import { IPaginationArray } from './interface.helper'
-import { IMedicalBill } from 'interfaces/medical-bill.interface'
+import { useTheme } from '@mui/material'
 
 export const errorMessage = (error: any, defaultMessage: string): any => {
   if (error?.response?.data?.error) {
@@ -99,9 +99,12 @@ const stringToColor = (string?: string) => {
 }
 
 export const stringAvatar = (name?: string) => {
+  const theme = useTheme()
   return {
     sx: {
-      bgcolor: stringToColor(name!) ? stringToColor(name!) : '#fff',
+      bgcolor: theme.palette.primary.light,
+      color: theme.palette.primary.main,
+      fontWeight: 500,
     },
     children: name
       ? name!.split(' ')!.length > 1
@@ -175,38 +178,3 @@ export const hasDateRange = (
 
   return false
 }
-
-const DEFAULT_VALUE = '-'
-
-// Extracted transformation logic
-export const transformBillData = (item: IMedicalBill) => ({
-  id: item?.id || DEFAULT_VALUE,
-  billNumber: item?.bill?.billNumber || DEFAULT_VALUE,
-  billId: item?.bill?.id || DEFAULT_VALUE,
-  claimNumber: item?.claimNumber || DEFAULT_VALUE,
-  totalBillAmount: item?.totalBillAmount || DEFAULT_VALUE,
-  allowedBillAmount: item?.allowedBillAmount || DEFAULT_VALUE,
-  processedDate: item?.bill?.processedDate || DEFAULT_VALUE,
-  examiner: item?.examiner || DEFAULT_VALUE,
-  status: item?.bill?.status || DEFAULT_VALUE,
-  isDocumentGenerated: item?.bill?.isDocumentGenerated,
-  mailRoomReceivedDate: item?.bill?.mailRoomReceivedDate || DEFAULT_VALUE,
-  NFSBillNumber: item?.bill?.NFSBillNumber || DEFAULT_VALUE,
-  claimant:
-    `${item?.claimant?.firstName || ''} ${
-      item?.claimant?.lastName || ''
-    }`.trim() || DEFAULT_VALUE,
-  insured:
-    `${item?.insured?.firstName || ''} ${
-      item?.insured?.lastName || ''
-    }`.trim() || DEFAULT_VALUE,
-  receivedDate: item?.bill?.receivedDate || DEFAULT_VALUE,
-  deaBillNumber: item?.bill?.deaBillNumber || DEFAULT_VALUE,
-  physician:
-    `${item?.physician?.firstName || ''} ${
-      item?.physician?.lastName || ''
-    }`.trim() || DEFAULT_VALUE,
-  serviceProvider: item?.serviceProvider?.billingName || DEFAULT_VALUE,
-  cptId: item?.bill?.id || DEFAULT_VALUE,
-  updatedDate: item?.updatedAt || DEFAULT_VALUE,
-})

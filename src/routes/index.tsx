@@ -20,7 +20,9 @@ const Login = lazy(() => import('../pages/authentication/Login'))
 const Layout = lazy(() => import('../atic-common-helpers/layout/MainLayout'))
 const { ADMIN, EXAMINER } = IRoles
 import config from '../constant/config'
+
 const Dashboard = lazy(() => import('../pages/dashboard/dashboard'))
+const AAACases = lazy(() => import('../pages/aaaCases/index'))
 
 const appLoader = () => {
   return <Loader />
@@ -54,6 +56,16 @@ const RoutePath = createBrowserRouter(
             {
               path: '',
               element: <Dashboard />,
+            },
+          ],
+        },
+        {
+          path: '/aaa-cases',
+          element: <MainLayout />,
+          children: [
+            {
+              path: '',
+              element: <AAACases />,
             },
           ],
         },

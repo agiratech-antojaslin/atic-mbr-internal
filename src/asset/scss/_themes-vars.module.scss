@@ -1,18 +1,18 @@
 // paper & background
 $paper: #ffffff;
-$main_div: rgba(233, 238, 244, 1);
+$main_div: #f9f9f9;
 
 // primary
 $primary: #007bff;
 $primaryLight: #e6edf4;
 $primaryMain: #00498f;
 $primaryDark: rgb(42, 42, 138);
-$primary200: #90caf9;
+$primary200: #f7f7f7;
 $primary700: #4c89bd;
 $primary800: #1565c0;
 $buttonColor: #283891;
 $cancelButtonColor: #e0deea;
-$hyperlinkColor: rgba(0, 73, 143, 1);
+$hyperlinkColor: #3296f4;
 
 // secondary
 $secondaryLight: #ede7f6;
@@ -64,11 +64,11 @@ $labelColor: #201f24;
 // text
 $textPrimary: #344054;
 $textSecondary: #667085;
-$textDark: #101828;
+$textDark: #202224;
 $textLight: #00498f;
 $textError: #b42318;
 $textSuccess: #027a48;
-$textLabel: #201f24;
+$textLabel: #202224;
 
 // border
 $borderMain: #d0d5dd;
@@ -78,6 +78,9 @@ $logoMain: #004a90;
 $logoLight: #5596d1;
 
 $grey300: #f2f4f7;
+
+$gradient1: #11479f;
+$gradient2: #5697d2;
 
 // ==============================|| DARK THEME VARIANTS ||============================== //
 
@@ -231,4 +234,7 @@ $createButtonColor: #5cb85c;
   inputBoxBgColor: $inputBoxBgColor;
   tableHeadColor: $tableHeadText;
   createButtonColor: $createButtonColor;
+
+  gradient1: $gradient1;
+  gradient2: $gradient2;
 }

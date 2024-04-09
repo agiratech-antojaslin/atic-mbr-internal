@@ -143,6 +143,7 @@ const ProfileSection = () => {
           },
           '& .MuiChip-label': {
             lineHeight: 0,
+            display: 'none',
           },
         }}
         icon={

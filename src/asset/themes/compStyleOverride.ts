@@ -1,15 +1,5 @@
 export default function componentStyleOverrides(theme: any) {
   return {
-    // MuiTypography: {
-    //   styleOverrides: {
-    //     root: {
-    //       fontSize: '.875rem',
-    //       '@media (min-width: 1536px)': {
-    //         fontSize: '1rem',
-    //       },
-    //     },
-    //   },
-    // },
     MuiButton: {
       styleOverrides: {
         root: {
@@ -144,7 +134,7 @@ export default function componentStyleOverrides(theme: any) {
             paddingTop: '5px',
             paddingBottom: '5px',
             '& h5': {
-              fontSize: '1rem',
+              fontSize: '1.142rem',
               fontWeight: 500,
             },
             '& svg': {
@@ -154,7 +144,7 @@ export default function componentStyleOverrides(theme: any) {
             '&.Mui-selected': {
               color: theme.textLight,
               backgroundColor: theme.backgroundDefault,
-              borderBottom: '3px solid #00498F',
+
               '& h5': {
                 color: theme.textLight,
               },
@@ -167,9 +157,22 @@ export default function componentStyleOverrides(theme: any) {
               '& svg': {
                 color: theme.textLight,
               },
+              '&::after': {
+                content: '""',
+                display: 'block',
+                position: 'absolute',
+                background: `linear-gradient(to right, ${theme.colors.gradient1}, ${theme.colors.gradient2})`,
+                height: '3px',
+                width: '100%',
+                bottom: 0,
+              },
             },
             '&:hover': {
-              backgroundColor: theme.divider,
+              color: theme.textLight,
+              backgroundColor: 'transparent !important',
+              '& svg': {
+                color: theme.textLight,
+              },
             },
           },
           '&.sub-menu': {
@@ -421,7 +424,7 @@ export default function componentStyleOverrides(theme: any) {
           },
           '& .MuiTab-root.Mui-selected': {
             color: theme.colors.textLight,
-            backgroundColor: '#E6EDF4',
+            backgroundColor: theme.colors.primaryLight,
           },
           '& .MuiTabs-indicator': {
             display: 'none',
